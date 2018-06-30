@@ -12,6 +12,7 @@
     "gatsby-transformer-remark": "^1.7.32",
     "inquirer": "^5.1.0",
     "lodash": "^4.17.4",
+    "react-markdown": "^3.3.4",
     "yargs-parser": "^10.0.0"
   },
   "devDependencies": {
