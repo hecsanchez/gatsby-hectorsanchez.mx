@@ -5,10 +5,10 @@ import './navigation.scss'
 export default () => (
   <nav role="navigation">
     <ul className="navigation">
-      <li className="navigationItem">
+      <li className="navigation__item">
         <Link to="/">Home</Link>
       </li>
-      <li className="navigationItem">
+      <li className="navigation__item">
         <Link to="/blog/">Blog</Link>
       </li>
     </ul>

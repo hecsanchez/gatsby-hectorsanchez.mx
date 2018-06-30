@@ -2,4 +2,15 @@
   position: absolute;
   width: 100%;
   z-index: 999;
+  padding: 3em;
+  box-sizing: border-box;
+}
+
+.logo {
+  max-width: 200px;
+  float: left;
+
+  img {
+    max-width: 100%;
+  }
 }
