@@ -1,0 +1,52 @@
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1em 3.5em .9em 1.5em;
+  line-height: 1;
+  letter-spacing: .1em;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  transition: color .23s ease, background .3s ease;
+
+  &:hover {
+    .button__icon {
+      right: .8em;
+    }
+  }
+}
+
+//  Sizes
+.button--md {
+  font-size: 1em;
+}
+
+// Colours
+.button--default {
+  color: #000000;
+  background: #fff;
+
+  &:hover {
+    background: #FF3100;
+    color: #fff;
+
+    .button__icon {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+// Icons
+.button__icon {
+  width: 1.2em;
+  top: 1em;
+  right: 2em;
+  position: absolute;
+  transition: right .23s ease;
+
+  path {
+    transition: fill .23s ease;
+  }
+}
