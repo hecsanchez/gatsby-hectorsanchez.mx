@@ -60,3 +60,15 @@
     }
   }
 }
+
+@media screen and (max-width: 750px) {
+  .social {
+    ul {
+      li {
+        a {
+          font-size: .85em;
+        }
+      }
+    }
+  }
+}

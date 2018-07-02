@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import base from './base.scss'
 import get from 'lodash/get'
 import Container from '../components/Container/Container'

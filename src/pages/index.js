@@ -2,33 +2,30 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Intro from '../components/Intro/Intro'
-import Skills from '../components/Skills/Skills'
-// import ArticlePreview from '../components/article-preview'
+import Intro from '../components/Sections/Intro/Intro'
+import Skills from '../components/Sections/Skills/Skills'
+import Projects from '../components/Sections/Projects/Projects'
+import Clients from '../components/Sections/Clients/Clients'
+import Footer from '../components/Footer/Footer'
+import './index.scss'
 
 class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const projects = get(this, 'props.data.allContentfulProject.edges')
     const [author] = get(this, 'props.data.allContentfulPerson.edges')
-    console.log('projects', projects);
+    const [imageContainer] = get(this, 'props.data.allContentfulAsset.edges')
+    const images = get(this, 'props.data.allContentfulAsset.edges')
+    console.log('images', images);
+
     return (
-      <div style={{ background: '#000' }}>
+      <div className="contentContainer">
         <Helmet title={siteTitle} />
         <Intro person={author} />
         <Skills person={author} />
-        <div className="wrapper">
-          <h2 className="section-headline">Projects</h2>
-          <ul className="article-list">
-            {projects.map((project, index) => {
-              return (
-                <div key={`p-${project.node.name}`}>
-                  {project.node.name}
-                </div>
-              )
-            })}
-          </ul>
-        </div>
+        <Projects projects={projects} imageContainer={imageContainer} />
+        <Clients person={author} />
+        <Footer />
       </div>
     )
   }
@@ -61,6 +58,12 @@ export const pageQuery = graphql`
           skillsDescription {
             skillsDescription
           }
+          clientsTitle
+          clientLogos {
+            file {
+              url
+            }
+          }
         }
       }
     }
@@ -74,6 +77,15 @@ export const pageQuery = graphql`
             file {
               url
             }
+          }
+        }
+      }
+    }
+    allContentfulAsset(filter: { id: { eq: "c2nfEs1uISoSaGu8OguMQ4o" } }) {
+      edges{
+        node {
+          file {
+            url
           }
         }
       }

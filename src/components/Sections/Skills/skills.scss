@@ -51,3 +51,26 @@
       }
     }
 }
+
+@media screen and (max-width: 750px) {
+  .skills__container {
+    .skills__content {
+      width: 100%;
+      float: none;
+      margin-top: 0em;
+
+      .skills__sign {
+        font-size: 7em;
+        right: -0.8em;
+      }
+
+    }
+    .skills__image {
+      img {
+        width: auto;
+        height: 30em;
+        right: -1.3em;
+      }
+    }
+  }
+}

@@ -20,10 +20,26 @@
     letter-spacing: 3px;
     opacity: .8;
     transition: all .3s ease;
+    position: relative;
+    top: .1em;
 
     &:hover {
       opacity: 1;
     }
   }
 
+}
+
+@media screen and (max-width: 750px) {
+  .navigation__item {
+
+    &:last-child {
+      margin-right: 0
+    }
+    
+    a {
+      font-size: 1.2em;
+      top: .6em;
+    }
+  }
 }

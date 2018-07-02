@@ -1,0 +1,44 @@
+.footer {
+  p {
+    font-size: 1.2em;
+    font-family: 'Avenir', sans-serif;
+    margin: 0;
+  }
+
+  img {
+    height: 2.8em;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  img.contentful {
+    margin-left: .3em;
+    height: 1.5em;
+  }
+  .credits {
+    text-align: right;
+  }
+}
+
+.footer-container {
+  padding: 1em 0;
+  border-top: 1px solid #6b6b6b;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 750px) {
+  .footer-container {
+    p {
+    margin-top: .5em;
+    }
+
+    display: block;
+    text-align: center;
+
+    .credits {
+      text-align: center;
+    }
+  }
+}

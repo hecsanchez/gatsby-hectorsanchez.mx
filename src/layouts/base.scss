@@ -26,11 +26,19 @@ img {
   width: 100%;
 }
 
-h1,
-h2,
-h3 {
-  font-size: 2em;
-  font-weight: normal;
+h2 {
+  font-size: 5em;
+  margin-top: .5em;
+}
+
+h4 {
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: .6em;
+  margin-bottom: .6em;
 }
 
 a {
@@ -55,4 +63,11 @@ p {
 
 .description {
   font-family: 'PT Serif', serif;
+}
+
+
+@media screen and (max-width: 750px) {
+  body {
+    font-size: 2vw;
+  }
 }

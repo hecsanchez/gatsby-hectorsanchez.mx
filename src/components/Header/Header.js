@@ -7,6 +7,5 @@ export default ({logo}) => (
     <div className="logo">
       <img src={logo}></img>
     </div>
-    <Navigation/>
   </header>
 )

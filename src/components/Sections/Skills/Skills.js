@@ -1,6 +1,6 @@
 import React  from 'react'
 import Markdown from 'react-markdown'
-import Button from '../Button/Button'
+import Button from '../../Button/Button'
 import './skills.scss'
 
 class Skills extends React.Component {
@@ -16,6 +16,10 @@ class Skills extends React.Component {
     const domRect = this.refs.profileImg.getBoundingClientRect();
     this.setState({imgPosition: domRect.top})
     window.addEventListener('scroll', this.handleScroll.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll() {
