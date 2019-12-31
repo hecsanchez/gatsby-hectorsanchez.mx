@@ -6,10 +6,7 @@ export default () => (
   <nav role="navigation">
     <ul className="navigation">
       <li className="navigation__item">
-        <Link to="/">Home</Link>
-      </li>
-      <li className="navigation__item">
-        <Link to="/blog/">Blog</Link>
+        <a href="mailto:hola@hectorsanchez.mx">Contact</a>
       </li>
     </ul>
   </nav>

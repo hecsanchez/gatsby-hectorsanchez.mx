@@ -1,0 +1,329 @@
+[
+  {
+    "ts": "2019-12-30T22:44:03.990Z",
+    "level": "error",
+    "error": {
+      "name": "BadRequest",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "28p9vvm1oxuw"
+            }
+          },
+          "id": "person",
+          "type": "ContentType",
+          "createdAt": "2017-05-11T12:04:23.540Z",
+          "updatedAt": "2017-05-18T14:04:51.650Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "066RqBikAjzKy0SWUEtFvH"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "2AAFsI4st4sZPlF1LFT13q"
+            }
+          },
+          "publishedCounter": 7,
+          "version": 14,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "2AAFsI4st4sZPlF1LFT13q"
+            }
+          },
+          "publishedVersion": 13,
+          "firstPublishedAt": "2017-05-11T12:04:23.869Z",
+          "publishedAt": "2017-05-18T14:04:51.628Z"
+        },
+        "displayField": "name",
+        "name": "Person",
+        "description": "",
+        "fields": [
+          {
+            "id": "name",
+            "name": "Name",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "title",
+            "name": "Title",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "shortBio",
+            "name": "Short Bio",
+            "type": "Text",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "email",
+            "name": "Email",
+            "type": "Symbol",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "phone",
+            "name": "Phone",
+            "type": "Symbol",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "facebook",
+            "name": "Facebook",
+            "type": "Symbol",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "twitter",
+            "name": "Twitter",
+            "type": "Symbol",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "github",
+            "name": "Github",
+            "type": "Symbol",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "linkedin",
+            "name": "LinkedIn",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "behance",
+            "name": "Behance",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "image",
+            "name": "Image",
+            "type": "Link",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false,
+            "linkType": "Asset"
+          }
+        ]
+      },
+      "data": {
+        "status": 400,
+        "statusText": "Bad Request",
+        "message": "You need to omit a field before deleting it",
+        "details": {
+        },
+        "request": {
+          "url": "https://api.contentful.com:443/spaces/efy8gj3lo7l2/content_types/person",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/6.2.3; sdk contentful-management.js/4.2.2; platform node.js/v10.15.3; os macOS/19.2.0;",
+            "Authorization": "Bearer ...Ctoic",
+            "user-agent": "node.js/v10.15.3",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 10,
+            "Content-Length": 1545
+          },
+          "method": "put",
+          "payloadData": "{\"displayField\":\"name\",\"name\":\"Person\",\"description\":\"\",\"fields\":[{\"id\":\"name\",\"name\":\"Name\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"title\",\"name\":\"Title\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"shortBio\",\"name\":\"Short Bio\",\"type\":\"Text\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"email\",\"name\":\"Email\",\"type\":\"Symbol\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"phone\",\"name\":\"Phone\",\"type\":\"Symbol\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"facebook\",\"name\":\"Facebook\",\"type\":\"Symbol\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"twitter\",\"name\":\"Twitter\",\"type\":\"Symbol\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"github\",\"name\":\"Github\",\"type\":\"Symbol\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"linkedin\",\"name\":\"LinkedIn\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"behance\",\"name\":\"Behance\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"image\",\"name\":\"Image\",\"type\":\"Link\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false,\"linkType\":\"Asset\"}]}"
+        },
+        "requestId": "674a686838d4348919d98d0ed800efee"
+      }
+    }
+  },
+  {
+    "ts": "2019-12-30T22:44:15.763Z",
+    "level": "error",
+    "error": {
+      "name": "UnknownField",
+      "entity": {
+        "original": {
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "28p9vvm1oxuw"
+              }
+            },
+            "id": "15jwOBqpxqSAOy2eOO4S0m",
+            "type": "Entry",
+            "createdAt": "2017-05-11T12:04:29.532Z",
+            "updatedAt": "2017-05-18T14:13:14.463Z",
+            "createdBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "066RqBikAjzKy0SWUEtFvH"
+              }
+            },
+            "updatedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "2AAFsI4st4sZPlF1LFT13q"
+              }
+            },
+            "publishedCounter": 15,
+            "version": 190,
+            "publishedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "2AAFsI4st4sZPlF1LFT13q"
+              }
+            },
+            "publishedVersion": 189,
+            "firstPublishedAt": "2017-05-11T12:06:33.065Z",
+            "publishedAt": "2017-05-18T14:13:14.431Z",
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "person"
+              }
+            }
+          },
+          "fields": {
+            "name": {
+              "en-US": "John Doe"
+            },
+            "title": {
+              "en-US": "Web Developer"
+            },
+            "company": {
+              "en-US": "ACME"
+            },
+            "shortBio": {
+              "en-US": "Research and recommendations for modern stack websites."
+            },
+            "email": {
+              "en-US": "john@doe.com"
+            },
+            "phone": {
+              "en-US": "0176 / 1234567"
+            },
+            "facebook": {
+              "en-US": "johndoe"
+            },
+            "twitter": {
+              "en-US": "johndoe"
+            },
+            "github": {
+              "en-US": "johndoe"
+            },
+            "image": {
+              "en-US": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Asset",
+                  "id": "7orLdboQQowIUs22KAW4U"
+                }
+              }
+            }
+          }
+        },
+        "transformed": {
+        }
+      },
+      "data": {
+        "status": 422,
+        "statusText": "Unprocessable Entity",
+        "message": "No field with id \"company\" found.",
+        "details": {
+          "errors": [
+            {
+              "name": "unknown",
+              "path": [
+                "fields",
+                "company"
+              ]
+            }
+          ]
+        },
+        "request": {
+          "url": "https://api.contentful.com:443/spaces/efy8gj3lo7l2/entries/15jwOBqpxqSAOy2eOO4S0m",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/6.2.3; sdk contentful-management.js/4.2.2; platform node.js/v10.15.3; os macOS/19.2.0;",
+            "Authorization": "Bearer ...Ctoic",
+            "user-agent": "node.js/v10.15.3",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 150,
+            "Content-Length": 428
+          },
+          "method": "put",
+          "payloadData": "{\"fields\":{\"name\":{\"en-US\":\"John Doe\"},\"title\":{\"en-US\":\"Web Developer\"},\"company\":{\"en-US\":\"ACME\"},\"shortBio\":{\"en-US\":\"Research and recommendations for modern stack websites.\"},\"email\":{\"en-US\":\"john@doe.com\"},\"phone\":{\"en-US\":\"0176 / 1234567\"},\"facebook\":{\"en-US\":\"johndoe\"},\"twitter\":{\"en-US\":\"johndoe\"},\"github\":{\"en-US\":\"johndoe\"},\"image\":{\"en-US\":{\"sys\":{\"type\":\"Link\",\"linkType\":\"Asset\",\"id\":\"7orLdboQQowIUs22KAW4U\"}}}}}"
+        },
+        "requestId": "882abad9f19f5c01e62715ee19d42f86"
+      }
+    }
+  }
+]

@@ -19,13 +19,15 @@ class RootIndex extends React.Component {
     console.log('images', images);
 
     return (
-      <div className="contentContainer">
-        <Helmet title={siteTitle} />
-        <Intro person={author} />
-        <Skills person={author} />
-        <Projects projects={projects} imageContainer={imageContainer} />
-        <Clients person={author} />
-        <Footer />
+      <div>
+        <div className="contentContainer">
+          <Helmet title={siteTitle} />
+          <Intro person={author} />
+          {/* <Skills person={author} /> */}
+          {/* <Projects projects={projects} imageContainer={imageContainer} /> */}
+          <Clients person={author} />
+          <Footer />
+        </div>
       </div>
     )
   }

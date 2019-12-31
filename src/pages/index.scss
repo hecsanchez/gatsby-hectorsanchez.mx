@@ -3,3 +3,50 @@
   position: relative;
   overflow: hidden;
 }
+
+.title.about {
+  margin-bottom: .5em;
+}
+
+
+.intro__container {
+  display: flex;
+
+  .title {
+    font-size: 4em;
+  }
+
+  .intro-content {
+    max-width: 50%;
+  }
+}
+
+
+.intro__image {
+  flex-basis: 45%;
+  flex-grow: 0;
+  margin-right: 5%;
+
+  img {
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .intro__container {
+    display: block;
+  
+    .title {
+      font-size: 6em;
+    }
+  
+    .intro__content {
+      max-width: 100%;
+       
+      p {
+        font-size: 2em;
+      }
+    }
+  }
+}

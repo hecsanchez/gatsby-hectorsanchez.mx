@@ -4,8 +4,8 @@ try {
   contentfulConfig = require('./.contentful')
 } catch (_) {
   contentfulConfig = {
-    spaceId: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN,
+    spaceId: 'efy8gj3lo7l2',
+    accessToken: 'da40f5ae0ea78516e3c895df7c98304b58b990dc47568b4421c4be7523197315',
   }
 } finally {
   const { spaceId, accessToken } = contentfulConfig
@@ -22,10 +22,10 @@ module.exports = {
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
-    `gatsby-plugin-sass`,
+    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
-    },
+    }
   ],
 }

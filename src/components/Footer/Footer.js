@@ -8,7 +8,7 @@ export default () => (
   <div className="footer">
     <div className="wrapper">
       <div className="footer-container">
-        <p>&copy; 2018 Hector Sanchez</p>
+        <p>Hector Sanchez &copy; 2018 - 2020 </p>
         <div className="credits">
           <p>Build with <img className="gatsby" src={Gatsby} /></p>
           <p>Content delivered via <img className="contentful" src={Contentful} /></p>

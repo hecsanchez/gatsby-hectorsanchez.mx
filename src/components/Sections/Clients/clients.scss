@@ -8,9 +8,15 @@
 
 .clients__logos {
   display: flex;
+  flex-wrap: wrap;
+
+  .client-logo {
+    flex-basis: 25%;
+  }
 
   img {
-    max-width: 100%;
+    max-width: 90%;
+    margin: 2em auto;
   }
 }
 
@@ -21,8 +27,9 @@
   }
   .clients__logos {
     flex-wrap: wrap;
-  }
-  .client-logo {
-    flex-basis: 16em;
+
+    .client-logo {
+      flex-basis: 16em;
+    }
   }
 }
